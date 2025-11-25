@@ -1,0 +1,1421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.27" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.21.0.v202508021620</property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/first_report.gif</property>
+    <property name="cheatSheet">org.eclipse.birt.report.designer.ui.cheatsheet.firstreport</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <template-parameter-definitions>
+        <template-parameter-definition name="NewTemplateParameterDefinition" id="28">
+            <property name="allowedType">Table</property>
+            <text-property name="description">Customer Listing</text-property>
+            <default>
+                <table id="29">
+                    <property name="width">100%</property>
+                    <property name="pageBreakInterval">50</property>
+                    <column id="49"/>
+                    <column id="50"/>
+                    <column id="51"/>
+                    <column id="52"/>
+                    <header>
+                        <row id="30">
+                            <cell id="31">
+                                <label id="32">
+                                    <property name="fontFamily">sans-serif</property>
+                                    <property name="fontWeight">bold</property>
+                                    <text-property name="text">Contact</text-property>
+                                </label>
+                            </cell>
+                            <cell id="33">
+                                <label id="34">
+                                    <property name="fontFamily">sans-serif</property>
+                                    <property name="fontWeight">bold</property>
+                                    <text-property name="text">First</text-property>
+                                </label>
+                            </cell>
+                            <cell id="35">
+                                <label id="36">
+                                    <property name="fontFamily">sans-serif</property>
+                                    <property name="fontWeight">bold</property>
+                                    <text-property name="text">Last</text-property>
+                                </label>
+                            </cell>
+                            <cell id="37">
+                                <label id="38">
+                                    <property name="fontFamily">sans-serif</property>
+                                    <property name="fontWeight">bold</property>
+                                    <text-property name="text">Phone</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                    </header>
+                    <detail>
+                        <row id="39">
+                            <cell id="40"/>
+                            <cell id="41"/>
+                            <cell id="42"/>
+                            <cell id="43"/>
+                        </row>
+                    </detail>
+                    <footer>
+                        <row id="44">
+                            <cell id="45"/>
+                            <cell id="46"/>
+                            <cell id="47"/>
+                            <cell id="48"/>
+                        </row>
+                    </footer>
+                </table>
+            </default>
+        </template-parameter-definition>
+        <template-parameter-definition name="NewTemplateParameterDefinition1" id="78">
+            <property name="allowedType">Table</property>
+            <text-property name="description">Customer Listing Table</text-property>
+            <default>
+                <table id="79">
+                    <property name="width">100%</property>
+                    <property name="refTemplateParameter">NewTemplateParameterDefinition</property>
+                    <property name="pageBreakInterval">50</property>
+                    <column id="99"/>
+                    <column id="100"/>
+                    <column id="101"/>
+                    <column id="102"/>
+                    <header>
+                        <row id="80">
+                            <cell id="81">
+                                <label id="82">
+                                    <property name="fontFamily">sans-serif</property>
+                                    <property name="fontWeight">bold</property>
+                                    <text-property name="text">Contact</text-property>
+                                </label>
+                            </cell>
+                            <cell id="83">
+                                <label id="84">
+                                    <property name="fontFamily">sans-serif</property>
+                                    <property name="fontWeight">bold</property>
+                                    <text-property name="text">First</text-property>
+                                </label>
+                            </cell>
+                            <cell id="85">
+                                <label id="86">
+                                    <property name="fontFamily">sans-serif</property>
+                                    <property name="fontWeight">bold</property>
+                                    <text-property name="text">Last</text-property>
+                                </label>
+                            </cell>
+                            <cell id="87">
+                                <label id="88">
+                                    <property name="fontFamily">sans-serif</property>
+                                    <property name="fontWeight">bold</property>
+                                    <text-property name="text">Phone</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                    </header>
+                    <detail>
+                        <row id="89">
+                            <cell id="90"/>
+                            <cell id="91"/>
+                            <cell id="92"/>
+                            <cell id="93"/>
+                        </row>
+                    </detail>
+                    <footer>
+                        <row id="94">
+                            <cell id="95"/>
+                            <cell id="96"/>
+                            <cell id="97"/>
+                            <cell id="98"/>
+                        </row>
+                    </footer>
+                </table>
+            </default>
+        </template-parameter-definition>
+        <template-parameter-definition name="NewTemplateParameterDefinition2" id="132">
+            <property name="allowedType">Table</property>
+            <text-property name="description">Customer Listing Table</text-property>
+            <default>
+                <table id="133">
+                    <property name="width">100%</property>
+                    <property name="refTemplateParameter">NewTemplateParameterDefinition1</property>
+                    <property name="pageBreakInterval">50</property>
+                    <column id="157"/>
+                    <column id="158"/>
+                    <column id="159"/>
+                    <column id="160"/>
+                    <header>
+                        <row id="134">
+                            <cell id="135">
+                                <label id="136">
+                                    <property name="fontFamily">sans-serif</property>
+                                    <property name="fontWeight">bold</property>
+                                    <text-property name="text">Contact</text-property>
+                                </label>
+                            </cell>
+                            <cell id="137">
+                                <label id="138">
+                                    <property name="fontFamily">sans-serif</property>
+                                    <property name="fontWeight">bold</property>
+                                    <text-property name="text">First</text-property>
+                                </label>
+                            </cell>
+                            <cell id="139">
+                                <label id="140">
+                                    <property name="fontFamily">sans-serif</property>
+                                    <property name="fontWeight">bold</property>
+                                    <text-property name="text">Last</text-property>
+                                </label>
+                            </cell>
+                            <cell id="141">
+                                <label id="142">
+                                    <property name="fontFamily">sans-serif</property>
+                                    <property name="fontWeight">bold</property>
+                                    <text-property name="text">Phone</text-property>
+                                </label>
+                            </cell>
+                        </row>
+                    </header>
+                    <detail>
+                        <row id="143">
+                            <cell id="144">
+                                <data id="145"/>
+                            </cell>
+                            <cell id="146">
+                                <data id="147"/>
+                            </cell>
+                            <cell id="148">
+                                <data id="149"/>
+                            </cell>
+                            <cell id="150">
+                                <data id="151"/>
+                            </cell>
+                        </row>
+                    </detail>
+                    <footer>
+                        <row id="152">
+                            <cell id="153"/>
+                            <cell id="154"/>
+                            <cell id="155"/>
+                            <cell id="156"/>
+                        </row>
+                    </footer>
+                </table>
+            </default>
+        </template-parameter-definition>
+    </template-parameter-definitions>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="246">
+            <property name="FILELIST">query_agenda_participante.xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="Data Set" id="247">
+            <property name="nullsOrdering">nulls lowest</property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">NM_AGENDA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">NM_AGENDA</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DS_AGENDA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">DS_AGENDA</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DS_CONTATO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">DS_CONTATO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DT_INICIO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">DT_INICIO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DT_FIM</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">DT_FIM</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DS_STATUS</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">DS_STATUS</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DS_OBS</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">DS_OBS</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">FK_SECRETARIA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">FK_SECRETARIA</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">FK_USER_CREATE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">FK_USER_CREATE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DT_CREATE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">DT_CREATE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">FK_USER_UPDATE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">FK_USER_UPDATE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DT_UPDATE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">DT_UPDATE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DS_LOCAL</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">DS_LOCAL</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">NM_LINK_1</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">NM_LINK_1</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DS_LINK_URL_1</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">DS_LINK_URL_1</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">NM_LINK_2</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">NM_LINK_2</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DS_LINK_2</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">DS_LINK_2</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">TP_LOCAL</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">TP_LOCAL</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">FL_LINK_EXTRA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">FL_LINK_EXTRA</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">TP_PARTICIPANTE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">TP_PARTICIPANTE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">NM_PARTICIPANTE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">NM_PARTICIPANTE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">NM_EMAIL</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">NM_EMAIL</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DS_PARTICIPANTE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">DS_PARTICIPANTE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">NU_TELEFONE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">NU_TELEFONE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">NM_SETOR</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">NM_SETOR</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DS_LOCAL1</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">DS_LOCAL1</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">NU_CANDIDATO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">NU_CANDIDATO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">NM_CARGO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">NM_CARGO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DS_SITUACAO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">DS_SITUACAO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">NU_QTD_VOTOS_COMPUTADOS</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">NU_QTD_VOTOS_COMPUTADOS</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">NM_PARTIDO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">NM_PARTIDO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ID_AGENDA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">ID_AGENDA</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">NM_AGENDA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">DS_AGENDA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">DS_CONTATO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">DT_INICIO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">DT_FIM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">DS_STATUS</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">DS_OBS</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">FK_SECRETARIA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">FK_USER_CREATE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">DT_CREATE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">FK_USER_UPDATE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">DT_UPDATE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">DS_LOCAL</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">NM_LINK_1</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">DS_LINK_URL_1</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">NM_LINK_2</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">DS_LINK_2</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">TP_LOCAL</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">FL_LINK_EXTRA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">20</property>
+                        <property name="name">TP_PARTICIPANTE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">21</property>
+                        <property name="name">NM_PARTICIPANTE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">22</property>
+                        <property name="name">NM_EMAIL</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">23</property>
+                        <property name="name">DS_PARTICIPANTE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">24</property>
+                        <property name="name">NU_TELEFONE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">25</property>
+                        <property name="name">NM_SETOR</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">26</property>
+                        <property name="name">DS_LOCAL1</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">27</property>
+                        <property name="name">NU_CANDIDATO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">28</property>
+                        <property name="name">NM_CARGO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">29</property>
+                        <property name="name">DS_SITUACAO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">30</property>
+                        <property name="name">NU_QTD_VOTOS_COMPUTADOS</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">31</property>
+                        <property name="name">NM_PARTIDO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">32</property>
+                        <property name="name">ID_AGENDA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">NM_AGENDA</property>
+                    <property name="nativeName">NM_AGENDA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">DS_AGENDA</property>
+                    <property name="nativeName">DS_AGENDA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">DS_CONTATO</property>
+                    <property name="nativeName">DS_CONTATO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">DT_INICIO</property>
+                    <property name="nativeName">DT_INICIO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">DT_FIM</property>
+                    <property name="nativeName">DT_FIM</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">DS_STATUS</property>
+                    <property name="nativeName">DS_STATUS</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">DS_OBS</property>
+                    <property name="nativeName">DS_OBS</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">FK_SECRETARIA</property>
+                    <property name="nativeName">FK_SECRETARIA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">FK_USER_CREATE</property>
+                    <property name="nativeName">FK_USER_CREATE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">DT_CREATE</property>
+                    <property name="nativeName">DT_CREATE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">FK_USER_UPDATE</property>
+                    <property name="nativeName">FK_USER_UPDATE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">DT_UPDATE</property>
+                    <property name="nativeName">DT_UPDATE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">DS_LOCAL</property>
+                    <property name="nativeName">DS_LOCAL</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">NM_LINK_1</property>
+                    <property name="nativeName">NM_LINK_1</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">DS_LINK_URL_1</property>
+                    <property name="nativeName">DS_LINK_URL_1</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">NM_LINK_2</property>
+                    <property name="nativeName">NM_LINK_2</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">17</property>
+                    <property name="name">DS_LINK_2</property>
+                    <property name="nativeName">DS_LINK_2</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">18</property>
+                    <property name="name">TP_LOCAL</property>
+                    <property name="nativeName">TP_LOCAL</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">19</property>
+                    <property name="name">FL_LINK_EXTRA</property>
+                    <property name="nativeName">FL_LINK_EXTRA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">20</property>
+                    <property name="name">TP_PARTICIPANTE</property>
+                    <property name="nativeName">TP_PARTICIPANTE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">21</property>
+                    <property name="name">NM_PARTICIPANTE</property>
+                    <property name="nativeName">NM_PARTICIPANTE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">22</property>
+                    <property name="name">NM_EMAIL</property>
+                    <property name="nativeName">NM_EMAIL</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">23</property>
+                    <property name="name">DS_PARTICIPANTE</property>
+                    <property name="nativeName">DS_PARTICIPANTE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">24</property>
+                    <property name="name">NU_TELEFONE</property>
+                    <property name="nativeName">NU_TELEFONE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">25</property>
+                    <property name="name">NM_SETOR</property>
+                    <property name="nativeName">NM_SETOR</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">26</property>
+                    <property name="name">DS_LOCAL1</property>
+                    <property name="nativeName">DS_LOCAL1</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">27</property>
+                    <property name="name">NU_CANDIDATO</property>
+                    <property name="nativeName">NU_CANDIDATO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">28</property>
+                    <property name="name">NM_CARGO</property>
+                    <property name="nativeName">NM_CARGO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">29</property>
+                    <property name="name">DS_SITUACAO</property>
+                    <property name="nativeName">DS_SITUACAO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">30</property>
+                    <property name="name">NU_QTD_VOTOS_COMPUTADOS</property>
+                    <property name="nativeName">NU_QTD_VOTOS_COMPUTADOS</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">31</property>
+                    <property name="name">NM_PARTIDO</property>
+                    <property name="nativeName">NM_PARTIDO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">32</property>
+                    <property name="name">ID_AGENDA</property>
+                    <property name="nativeName">ID_AGENDA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[//ROW]#:#{NM_AGENDA;STRING;NM_AGENDA},{DS_AGENDA;STRING;DS_AGENDA},{DS_CONTATO;STRING;DS_CONTATO},{DT_INICIO;STRING;DT_INICIO},{DT_FIM;STRING;DT_FIM},{DS_STATUS;STRING;DS_STATUS},{DS_OBS;STRING;DS_OBS},{FK_SECRETARIA;STRING;FK_SECRETARIA},{FK_USER_CREATE;STRING;FK_USER_CREATE},{DT_CREATE;STRING;DT_CREATE},{FK_USER_UPDATE;STRING;FK_USER_UPDATE},{DT_UPDATE;STRING;DT_UPDATE},{DS_LOCAL;STRING;DS_LOCAL},{NM_LINK_1;STRING;NM_LINK_1},{DS_LINK_URL_1;STRING;DS_LINK_URL_1},{NM_LINK_2;STRING;NM_LINK_2},{DS_LINK_2;STRING;DS_LINK_2},{TP_LOCAL;STRING;TP_LOCAL},{FL_LINK_EXTRA;STRING;FL_LINK_EXTRA},{TP_PARTICIPANTE;STRING;TP_PARTICIPANTE},{NM_PARTICIPANTE;STRING;NM_PARTICIPANTE},{NM_EMAIL;STRING;NM_EMAIL},{DS_PARTICIPANTE;STRING;DS_PARTICIPANTE},{NU_TELEFONE;STRING;NU_TELEFONE},{NM_SETOR;STRING;NM_SETOR},{DS_LOCAL1;STRING;DS_LOCAL1},{NU_CANDIDATO;STRING;NU_CANDIDATO},{NM_CARGO;STRING;NM_CARGO},{DS_SITUACAO;STRING;DS_SITUACAO},{NU_QTD_VOTOS_COMPUTADOS;STRING;NU_QTD_VOTOS_COMPUTADOS},{NM_PARTIDO;STRING;NM_PARTIDO},{ID_AGENDA;STRING;ID_AGENDA}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NM_AGENDA</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NM_AGENDA</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DS_AGENDA</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DS_AGENDA</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DS_CONTATO</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DS_CONTATO</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DT_INICIO</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DT_INICIO</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DT_FIM</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DT_FIM</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DS_STATUS</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DS_STATUS</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DS_OBS</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DS_OBS</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>FK_SECRETARIA</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>FK_SECRETARIA</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>FK_USER_CREATE</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>FK_USER_CREATE</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DT_CREATE</design:name>
+              <design:position>10</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DT_CREATE</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>FK_USER_UPDATE</design:name>
+              <design:position>11</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>FK_USER_UPDATE</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DT_UPDATE</design:name>
+              <design:position>12</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DT_UPDATE</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DS_LOCAL</design:name>
+              <design:position>13</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DS_LOCAL</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NM_LINK_1</design:name>
+              <design:position>14</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NM_LINK_1</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DS_LINK_URL_1</design:name>
+              <design:position>15</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DS_LINK_URL_1</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NM_LINK_2</design:name>
+              <design:position>16</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NM_LINK_2</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DS_LINK_2</design:name>
+              <design:position>17</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DS_LINK_2</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>TP_LOCAL</design:name>
+              <design:position>18</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>TP_LOCAL</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>FL_LINK_EXTRA</design:name>
+              <design:position>19</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>FL_LINK_EXTRA</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>TP_PARTICIPANTE</design:name>
+              <design:position>20</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>TP_PARTICIPANTE</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NM_PARTICIPANTE</design:name>
+              <design:position>21</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NM_PARTICIPANTE</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NM_EMAIL</design:name>
+              <design:position>22</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NM_EMAIL</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DS_PARTICIPANTE</design:name>
+              <design:position>23</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DS_PARTICIPANTE</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NU_TELEFONE</design:name>
+              <design:position>24</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NU_TELEFONE</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NM_SETOR</design:name>
+              <design:position>25</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NM_SETOR</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DS_LOCAL1</design:name>
+              <design:position>26</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DS_LOCAL1</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NU_CANDIDATO</design:name>
+              <design:position>27</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NU_CANDIDATO</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NM_CARGO</design:name>
+              <design:position>28</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NM_CARGO</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DS_SITUACAO</design:name>
+              <design:position>29</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DS_SITUACAO</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NU_QTD_VOTOS_COMPUTADOS</design:name>
+              <design:position>30</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NU_QTD_VOTOS_COMPUTADOS</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NM_PARTIDO</design:name>
+              <design:position>31</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NM_PARTIDO</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ID_AGENDA</design:name>
+              <design:position>32</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ID_AGENDA</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="110">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <label id="245">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">x-large</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">Customer Listing</text-property>
+        </label>
+        <table id="163">
+            <property name="width">100%</property>
+            <property name="dataSet">Data Set</property>
+            <property name="refTemplateParameter">NewTemplateParameterDefinition2</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">DS_AGENDA</property>
+                    <text-property name="displayName">DS_AGENDA</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["DS_AGENDA"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">NM_AGENDA</property>
+                    <text-property name="displayName">NM_AGENDA</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["NM_AGENDA"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">NU_TELEFONE</property>
+                    <text-property name="displayName">NU_TELEFONE</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["NU_TELEFONE"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">NM_EMAIL</property>
+                    <text-property name="displayName">NM_EMAIL</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["NM_EMAIL"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="pageBreakInterval">50</property>
+            <column id="187"/>
+            <column id="188"/>
+            <column id="189"/>
+            <column id="190"/>
+            <header>
+                <row id="164">
+                    <cell id="165">
+                        <label id="248">
+                            <text-property name="text">DS_AGENDA</text-property>
+                        </label>
+                    </cell>
+                    <cell id="167">
+                        <label id="250">
+                            <text-property name="text">NM_AGENDA</text-property>
+                        </label>
+                    </cell>
+                    <cell id="169">
+                        <label id="252">
+                            <text-property name="text">NU_TELEFONE</text-property>
+                        </label>
+                    </cell>
+                    <cell id="171">
+                        <label id="254">
+                            <text-property name="text">NM_EMAIL</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="173">
+                    <cell id="174">
+                        <data id="249">
+                            <property name="resultSetColumn">DS_AGENDA</property>
+                        </data>
+                    </cell>
+                    <cell id="176">
+                        <data id="251">
+                            <property name="resultSetColumn">NM_AGENDA</property>
+                        </data>
+                    </cell>
+                    <cell id="178">
+                        <data id="253">
+                            <property name="resultSetColumn">NU_TELEFONE</property>
+                        </data>
+                    </cell>
+                    <cell id="180">
+                        <data id="255">
+                            <property name="resultSetColumn">NM_EMAIL</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="182">
+                    <cell id="183"/>
+                    <cell id="184"/>
+                    <cell id="185"/>
+                    <cell id="186"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de PDF - BIRT</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: "Inter", Arial, sans-serif;
+            background: #f2f4f8;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            width: 100%;
+            max-width: 1300px;
+        }
+
+        .panel {
+            background: white;
+            width: 100%;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+        }
+
+        .side {
+            width: 420px;
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #111;
+        }
+
+        .section-title {
+            font-weight: 600;
+            margin: 20px 0 10px;
+            font-size: 17px;
+            color: #0066ff;
+        }
+
+        textarea {
+            width: 100%;
+            height: 160px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-family: monospace;
+            resize: vertical;
+        }
+
+        input[type="file"] {
+            padding: 8px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 12px 18px;
+            border: none;
+            background: #0066ff;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-top: 10px;
+        }
+        button:hover { background: #0044aa; }
+
+        .button-secondary { background: #666; }
+        .button-secondary:hover { background: #444; }
+
+    </style>
+</head>
+<body>
+
+<h1>Gerador de PDF - Templates BIRT</h1>
+
+<div class="container">
+
+    <!-- LEFT SIDE: RPTDESIGN + XML + GERAR PDF -->
+    <div class="panel">
+
+        <!-- 1. Importar RPTDESIGN -->
+        <div class="section-title">1. Importar Template (.rptdesign)</div>
+        <input type="file" id="fileInput" accept=".rptdesign">
+
+        <!-- 2. Importar XML -->
+        <div class="section-title">2. Importar XML Data</div>
+        <input type="file" id="xmlFileInput" accept=".xml" onchange="loadXmlFile()">
+        <textarea id="xmlTextArea"></textarea>
+
+        <!-- 3. Gerar PDF com arquivo -->
+        <div class="section-title">3. Gerar PDF Usando o Arquivo</div>
+        <button onclick="generatePdfMultipart()">Gerar PDF (RPT + XML)</button>
+
+    </div>
+
+    <!-- RIGHT SIDE: BASE64 -->
+    <div class="side">
+
+        <div class="section-title">Converter Template para Base64</div>
+
+        <button onclick="convertToBase64()">Converter .rptdesign → Base64</button>
+        <button class="button-secondary" onclick="copyBase64()">Copiar Base64</button>
+
+        <textarea id="base64Output" placeholder="Base64 do template..."></textarea>
+
+        <div class="section-title">Gerar PDF Usando Base64</div>
+        <button onclick="generatePdfBase64()">Gerar PDF (Base64 + XML)</button>
+
+    </div>
+
+</div>
+
+
+<script>
+    const xmlTextArea = document.getElementById("xmlTextArea");
+    xmlTextArea.value = `<root>
+    <cliente>
+        <nome>Fulano de Tal</nome>
+        <cpf>123.456.789-00</cpf>
+    </cliente>
+    <pedido>
+        <numero>ABC123</numero>
+        <valor>1500.00</valor>
+    </pedido>
+</root>`;
+
+    function convertToBase64() {
+        const fileInput = document.getElementById("fileInput");
+        const output = document.getElementById("base64Output");
+
+        if (!fileInput.files.length) {
+            alert("Selecione o arquivo .rptdesign primeiro.");
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const reader = new FileReader();
+
+        reader.onload = function() {
+            const arrayBuffer = reader.result;
+            const bytes = new Uint8Array(arrayBuffer);
+            let binary = "";
+            for (let i = 0; i < bytes.length; i++) binary += String.fromCharCode(bytes[i]);
+            output.value = btoa(binary);
+        };
+
+        reader.readAsArrayBuffer(file);
+    }
+
+    function copyBase64() {
+        const textarea = document.getElementById("base64Output");
+        textarea.select();
+        document.execCommand("copy");
+        alert("Base64 copiado!");
+    }
+
+    function loadXmlFile() {
+        const fileInput = document.getElementById("xmlFileInput");
+        if (!fileInput.files.length) return;
+
+        const reader = new FileReader();
+        reader.onload = () => xmlTextArea.value = reader.result;
+        reader.readAsText(fileInput.files[0], "UTF-8");
+    }
+
+    async function generatePdfMultipart() {
+        const fileInput = document.getElementById("fileInput");
+        if (!fileInput.files.length) return alert("Selecione o template .rptdesign.");
+
+        const formData = new FormData();
+        formData.append("templateFile", fileInput.files[0]);
+        formData.append("xmlData", new File([xmlTextArea.value], "data.xml", { type: "application/xml" }));
+
+        await sendRequest("/report/generate", formData, "report-file.pdf");
+    }
+
+    async function generatePdfBase64() {
+        const base64 = document.getElementById("base64Output").value.trim();
+        if (!base64) return alert("Base64 vazio.");
+
+        const formData = new FormData();
+        formData.append("templateFile", base64);
+        formData.append("xmlData", xmlTextArea.value);
+
+        await sendRequest("/report/generatewithbase64", formData, "report-base64.pdf");
+    }
+
+    async function sendRequest(url, formData, filename) {
+        try {
+            const response = await fetch(url, { method: "POST", body: formData });
+            if (!response.ok) throw new Error(await response.text());
+
+            const blob = await response.blob();
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = filename;
+            link.click();
+        } catch (err) {
+            alert("Erro: " + err.message);
+        }
+    }
+</script>
+
+</body>
+</html>

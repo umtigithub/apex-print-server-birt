@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DOCUMENT>
+  <APP_ID>135</APP_ID>
+  <APP_NAME>Oracle APEX App Builder</APP_NAME>
+  <DATE>11/11/2025</DATE>
+  <TITLE>QUERY_AGENDA_PARTICIPANTE</TITLE>
+  <USER_NAME>70849779456</USER_NAME>
+  <REGION ID="93629740851264386">
+    <ROWSET>
+      <ROW>
+        <NM_AGENDA>teste</NM_AGENDA>
+        <DS_AGENDA/>
+        <DS_CONTATO/>
+        <DT_INICIO>11-NOV-25 09.00.00.000000000 AM</DT_INICIO>
+        <DT_FIM>11-NOV-25 08.00.00.000000000 AM</DT_FIM>
+        <DS_STATUS>ATIVO</DS_STATUS>
+        <DS_OBS/>
+        <FK_SECRETARIA>UMTI</FK_SECRETARIA>
+        <FK_USER_CREATE>70849779456</FK_USER_CREATE>
+        <DT_CREATE>10-NOV-25 08.58.14.000000000 PM</DT_CREATE>
+        <FK_USER_UPDATE/>
+        <DT_UPDATE/>
+        <DS_LOCAL/>
+        <NM_LINK_1/>
+        <DS_LINK_URL_1/>
+        <NM_LINK_2/>
+        <DS_LINK_2/>
+        <TP_LOCAL/>
+        <FL_LINK_EXTRA>N</FL_LINK_EXTRA>
+        <TP_PARTICIPANTE>Externo</TP_PARTICIPANTE>
+        <NM_PARTICIPANTE>Xandão sem Moral</NM_PARTICIPANTE>
+        <NM_EMAIL>xand</NM_EMAIL>
+        <DS_PARTICIPANTE>Ministro do superemo</DS_PARTICIPANTE>
+        <NU_TELEFONE>8334649</NU_TELEFONE>
+        <NM_SETOR/>
+        <DS_LOCAL1/>
+        <NU_CANDIDATO/>
+        <NM_CARGO/>
+        <DS_SITUACAO/>
+        <NU_QTD_VOTOS_COMPUTADOS/>
+        <NM_PARTIDO/>
+        <ID_AGENDA>55</ID_AGENDA>
+      </ROW>
+      <ROW>
+        <NM_AGENDA>teste</NM_AGENDA>
+        <DS_AGENDA/>
+        <DS_CONTATO/>
+        <DT_INICIO>11-NOV-25 09.00.00.000000000 AM</DT_INICIO>
+        <DT_FIM>11-NOV-25 08.00.00.000000000 AM</DT_FIM>
+        <DS_STATUS>ATIVO</DS_STATUS>
+        <DS_OBS/>
+        <FK_SECRETARIA>UMTI</FK_SECRETARIA>
+        <FK_USER_CREATE>70849779456</FK_USER_CREATE>
+        <DT_CREATE>10-NOV-25 08.58.14.000000000 PM</DT_CREATE>
+        <FK_USER_UPDATE/>
+        <DT_UPDATE/>
+        <DS_LOCAL/>
+        <NM_LINK_1/>
+        <DS_LINK_URL_1/>
+        <NM_LINK_2/>
+        <DS_LINK_2/>
+        <TP_LOCAL/>
+        <FL_LINK_EXTRA>N</FL_LINK_EXTRA>
+        <TP_PARTICIPANTE>Interno</TP_PARTICIPANTE>
+        <NM_PARTICIPANTE>Rafael Gomes</NM_PARTICIPANTE>
+        <NM_EMAIL>allanrgc@gmail.com0</NM_EMAIL>
+        <DS_PARTICIPANTE>DEV</DS_PARTICIPANTE>
+        <NU_TELEFONE>83999978854</NU_TELEFONE>
+        <NM_SETOR>UMTI</NM_SETOR>
+        <DS_LOCAL1/>
+        <NU_CANDIDATO/>
+        <NM_CARGO/>
+        <DS_SITUACAO/>
+        <NU_QTD_VOTOS_COMPUTADOS/>
+        <NM_PARTIDO/>
+        <ID_AGENDA>55</ID_AGENDA>
+      </ROW>
+      <ROW>
+        <NM_AGENDA>teste</NM_AGENDA>
+        <DS_AGENDA/>
+        <DS_CONTATO/>
+        <DT_INICIO>11-NOV-25 09.00.00.000000000 AM</DT_INICIO>
+        <DT_FIM>11-NOV-25 08.00.00.000000000 AM</DT_FIM>
+        <DS_STATUS>ATIVO</DS_STATUS>
+        <DS_OBS/>
+        <FK_SECRETARIA>UMTI</FK_SECRETARIA>
+        <FK_USER_CREATE>70849779456</FK_USER_CREATE>
+        <DT_CREATE>10-NOV-25 08.58.14.000000000 PM</DT_CREATE>
+        <FK_USER_UPDATE/>
+        <DT_UPDATE/>
+        <DS_LOCAL/>
+        <NM_LINK_1/>
+        <DS_LINK_URL_1/>
+        <NM_LINK_2/>
+        <DS_LINK_2/>
+        <TP_LOCAL/>
+        <FL_LINK_EXTRA>N</FL_LINK_EXTRA>
+        <TP_PARTICIPANTE>Politico</TP_PARTICIPANTE>
+        <NM_PARTICIPANTE>LULA DA MURITIBA</NM_PARTICIPANTE>
+        <NM_EMAIL>franciscoqcoutinho@gmail.coKKD</NM_EMAIL>
+        <DS_PARTICIPANTE>ok</DS_PARTICIPANTE>
+        <NU_TELEFONE>83996185030</NU_TELEFONE>
+        <NM_SETOR/>
+        <DS_LOCAL1>ÁGUA BRANCA</DS_LOCAL1>
+        <NU_CANDIDATO>11999</NU_CANDIDATO>
+        <NM_CARGO>Vereador</NM_CARGO>
+        <DS_SITUACAO>Suplente</DS_SITUACAO>
+        <NU_QTD_VOTOS_COMPUTADOS>36</NU_QTD_VOTOS_COMPUTADOS>
+        <NM_PARTIDO>PP</NM_PARTIDO>
+        <ID_AGENDA>55</ID_AGENDA>
+      </ROW>
+    </ROWSET>
+  </REGION>
+</DOCUMENT>
+
