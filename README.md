@@ -1,6 +1,4 @@
-
-
-<h1>📄 apex-print-server-birt</h1>
+<h1> apex-print-server-birt</h1>
 
 <p>
   Este projeto fornece um <strong>Print Server baseado em Eclipse BIRT</strong> para geração de relatórios 
@@ -11,7 +9,7 @@
 
 <hr>
 
-<h2>🧰 Tecnologias Utilizadas</h2>
+<h2>Tecnologias Utilizadas</h2>
 <ul>
   <li>Java</li>
   <li>BIRT Runtime</li>
@@ -21,7 +19,7 @@
 
 <hr>
 
-<h2>🚀 Como Usar / Configurar</h2>
+<h2>Como Usar / Configurar</h2>
 
 <h3>1. Build local (sem Docker)</h3>
 <pre><code>./mvnw clean package
@@ -44,7 +42,7 @@ docker run -p 8080:8080 apex-print-server-birt
 
 <hr>
 
-<h2>📦 O que o projeto já inclui</h2>
+<h2>O que o projeto já inclui</h2>
 <ul>
   <li>Runtime completo do BIRT</li>
   <li>Dockerfile para containerização</li>
@@ -54,7 +52,7 @@ docker run -p 8080:8080 apex-print-server-birt
 
 <hr>
 
-<h2>🛠️ Como estender</h2>
+<h2> Como estender</h2>
 <p>Você pode:</p>
 <ul>
   <li>Adicionar novos relatórios <code>.rptdesign</code></li>
@@ -65,7 +63,7 @@ docker run -p 8080:8080 apex-print-server-birt
 
 <hr>
 
-<h2>🎯 Quando usar este print server</h2>
+<h2> Quando usar este print server</h2>
 <ul>
   <li>Quando você já usa BIRT para relatórios</li>
   <li>Quando precisa de uma engine de relatórios open-source e customizável</li>
@@ -74,7 +72,7 @@ docker run -p 8080:8080 apex-print-server-birt
 
 <hr>
 
-<h2>🤝 Contribuições</h2>
+<h2> Contribuições</h2>
 <p>
   Contribuições são bem-vindas!  
   Você pode abrir issues, enviar pull requests ou sugerir melhorias.
@@ -82,7 +80,7 @@ docker run -p 8080:8080 apex-print-server-birt
 
 <hr>
 
-<h2>📄 Licença</h2>
+<h2> Licença</h2>
 <p>
   Verifique as licenças do BIRT e demais dependências antes de uso em produção.
 </p>
