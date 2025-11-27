@@ -24,7 +24,7 @@
             max-width: 1300px;
         }
 
-        .panel {
+        .panel, .side {
             background: white;
             width: 100%;
             padding: 25px;
@@ -34,23 +34,36 @@
 
         .side {
             width: 420px;
-            background: white;
-            padding: 25px;
-            border-radius: 16px;
-            box-shadow: 0 4px 25px rgba(0,0,0,0.08);
         }
 
         h1 {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 10px;
             color: #111;
         }
 
+        .instruction {
+            font-size: 15px;
+            margin-bottom: 20px;
+            background: #e8f1ff;
+            border-left: 5px solid #0066ff;
+            padding: 12px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 800px;
+        }
+
         .section-title {
-            font-weight: 600;
-            margin: 20px 0 10px;
-            font-size: 17px;
+            font-weight: 700;
+            margin: 25px 0 10px;
+            font-size: 18px;
             color: #0066ff;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #444;
         }
 
         textarea {
@@ -68,6 +81,7 @@
             background: #f0f0f0;
             border-radius: 8px;
             border: 1px solid #ccc;
+            margin-bottom: 10px;
         }
 
         button {
@@ -81,35 +95,52 @@
             cursor: pointer;
             transition: 0.2s;
             margin-top: 10px;
+            width: 100%;
         }
         button:hover { background: #0044aa; }
 
         .button-secondary { background: #666; }
         .button-secondary:hover { background: #444; }
 
+        .step-box {
+            background: #fafafa;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
 
 <h1>Gerador de PDF - Templates BIRT</h1>
 
+<div class="instruction">
+    <strong>Antes de gerar o PDF:</strong><br>
+    1) Primeiro selecione o arquivo <strong>.rptdesign</strong><br>
+    2) Depois selecione o arquivo <strong>XML</strong><br>
+    3) Só então use os botões de geração de PDF
+</div>
+
 <div class="container">
 
-    <!-- LEFT SIDE: RPTDESIGN + XML + GERAR PDF -->
+    <!-- LEFT SIDE: RPT + XML + gerar PDF -->
     <div class="panel">
 
-        <!-- 1. Importar RPTDESIGN -->
-        <div class="section-title">1. Importar Template (.rptdesign)</div>
+        <!-- STEP 1 -->
+        <div class="section-title">Passo 1 — Selecione o arquivo .rptdesign</div>
+        <div class="subtitle">Este é o template do BIRT que será usado para montar o PDF</div>
         <input type="file" id="fileInput" accept=".rptdesign">
 
-        <!-- 2. Importar XML -->
-        <div class="section-title">2. Importar XML Data</div>
+        <!-- STEP 2 -->
+        <div class="section-title">Passo 2 — Selecione o XML com os dados</div>
+        <div class="subtitle">Este XML será enviado para preencher o template</div>
         <input type="file" id="xmlFileInput" accept=".xml" onchange="loadXmlFile()">
         <textarea id="xmlTextArea"></textarea>
 
-        <!-- 3. Gerar PDF com arquivo -->
-        <div class="section-title">3. Gerar PDF Usando o Arquivo</div>
-        <button onclick="generatePdfMultipart()">Gerar PDF (RPT + XML)</button>
+        <!-- STEP 3 -->
+        <div class="section-title">Passo 3 — Gerar o PDF usando arquivos selecionados</div>
+        <button onclick="generatePdfMultipart()">Gerar PDF (Template + XML)</button>
 
     </div>
 
@@ -117,13 +148,11 @@
     <div class="side">
 
         <div class="section-title">Converter Template para Base64</div>
-
         <button onclick="convertToBase64()">Converter .rptdesign → Base64</button>
         <button class="button-secondary" onclick="copyBase64()">Copiar Base64</button>
-
         <textarea id="base64Output" placeholder="Base64 do template..."></textarea>
 
-        <div class="section-title">Gerar PDF Usando Base64</div>
+        <div class="section-title">Gerar PDF com Base64</div>
         <button onclick="generatePdfBase64()">Gerar PDF (Base64 + XML)</button>
 
     </div>
@@ -149,7 +178,7 @@
         const output = document.getElementById("base64Output");
 
         if (!fileInput.files.length) {
-            alert("Selecione o arquivo .rptdesign primeiro.");
+            alert("Você precisa selecionar o arquivo .rptdesign primeiro.");
             return;
         }
 
@@ -196,7 +225,7 @@
 
     async function generatePdfBase64() {
         const base64 = document.getElementById("base64Output").value.trim();
-        if (!base64) return alert("Base64 vazio.");
+        if (!base64) return alert("Base64 está vazio.");
 
         const formData = new FormData();
         formData.append("templateFile", base64);
